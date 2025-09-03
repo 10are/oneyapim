@@ -14,11 +14,9 @@ import {
   Clock3,
   Volume2,
   Lightbulb,
-  CheckCircle2,
   AlertTriangle,
   QrCode,
   ChevronRight,
-  ChevronDown,
   Sparkles,
 } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
@@ -236,7 +234,7 @@ export default function OrganizationServicePanel() {
   );
 }
 
-function TimelineItem({ time, title, icon: Icon, status, color, pulse }: { time: string; title: string; icon: any; status: string; color?: string; pulse?: boolean }) {
+function TimelineItem({ time, title, icon: Icon, status, color, pulse }: { time: string; title: string; icon: React.ComponentType<{ className?: string }>; status: string; color?: string; pulse?: boolean }) {
   return (
     <div className="grid grid-cols-[72px_1fr_auto] items-center gap-3">
       <div className="text-purple-500 dark:text-slate-400 text-sm tabular-nums">{time}</div>
@@ -263,7 +261,7 @@ function Metric({ label, value }: { label: string; value: string }) {
   );
 }
 
-function InfoCard({ title, icon: Icon, accent, items }: { title: string; icon: any; accent: string; items: { k: string; v: string }[] }) {
+function InfoCard({ title, icon: Icon, accent, items }: { title: string; icon: React.ComponentType<{ className?: string }>; accent: string; items: { k: string; v: string }[] }) {
   return (
     <div className="rounded-2xl border border-purple-200/20 dark:border-white/10 bg-white/80 dark:bg-white/5 backdrop-blur p-5 relative overflow-hidden">
       <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${accent}`} aria-hidden />

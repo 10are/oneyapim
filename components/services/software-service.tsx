@@ -173,25 +173,25 @@ export default function SoftwareServiceVSCode() {
                     <CodeLine indent>
                       <span className="text-emerald-400">webDevelopment</span>
                       <span className="text-slate-400">:</span>
-                      <span className="text-amber-300"> "Modern web siteleri"</span>
+                      <span className="text-amber-300"> &quot;Modern web siteleri&quot;</span>
                       <span className="text-slate-400">,</span>
                     </CodeLine>
                     <CodeLine indent>
                       <span className="text-emerald-400">mobileApps</span>
                       <span className="text-slate-400">:</span>
-                      <span className="text-amber-300"> "iOS &amp; Android uygulamaları"</span>
+                      <span className="text-amber-300"> &quot;iOS &amp; Android uygulamaları&quot;</span>
                       <span className="text-slate-400">,</span>
                     </CodeLine>
                     <CodeLine indent>
                       <span className="text-emerald-400">customSoftware</span>
                       <span className="text-slate-400">:</span>
-                      <span className="text-amber-300"> "Özel yazılım çözümleri"</span>
+                      <span className="text-amber-300"> &quot;Özel yazılım çözümleri&quot;</span>
                       <span className="text-slate-400">,</span>
                     </CodeLine>
                     <CodeLine indent>
                       <span className="text-emerald-400">eCommerce</span>
                       <span className="text-slate-400">:</span>
-                      <span className="text-amber-300"> "E-ticaret platformları"</span>
+                      <span className="text-amber-300"> &quot;E-ticaret platformları&quot;</span>
                     </CodeLine>
                     <CodeLine>{"};"}</CodeLine>
 
@@ -352,11 +352,4 @@ function CodeLine({ children, indent = false, level = 1 }: { children: React.Rea
   );
 }
 
-// Optional section tag used in the fake code above (visual only)
-function Section({ title }: { title: string }) {
-  return (
-    <div className="mt-4 rounded-xl border border-slate-700/50 bg-slate-800/40 p-4 text-slate-200">
-      <div className="text-sm opacity-80">{title}</div>
-    </div>
-  );
-}
+

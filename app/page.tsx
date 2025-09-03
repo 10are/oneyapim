@@ -4,15 +4,15 @@ import { useLanguage } from '@/contexts/language-context';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
   ArrowRight, Calendar, Code, Users, Mic, 
-  Target, Eye, Award, CheckCircle, Star,
-  Mail, Phone, MapPin, Send,
-  Globe, Rocket, Shield, Cpu, Database, Cloud, Music, Video, Headphones
+  Target, Eye,
+  Mail, Phone, MapPin,
+  Globe, Cpu, Database, Music, Video
 } from 'lucide-react';
 import OrganizationService from '@/components/services/organization-service';
 import SoftwareService from '@/components/services/software-service';
 import { ManagementService } from '@/components/services/management-service';
 import StudioService from '@/components/services/studio-service';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import React from 'react';
 
 export default function HomePage() {
@@ -28,55 +28,14 @@ export default function HomePage() {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1.1, 1]);
-
-  const services = [
-    {
-      icon: Calendar,
-      title: t.services.organization.title,
-      description: t.services.organization.description,
-      features: ['Tiyatro Etkinlikleri', 'Konser Organizasyonu', 'Stand-up Gösterileri', 'Sahne Yönetimi'],
-      color: 'from-red-500 to-red-600'
-    },
-    {
-      icon: Code,
-      title: t.services.software.title,
-      description: t.services.software.description,
-      features: ['Web Siteleri', 'Mobil Uygulamalar', 'Özel Yazılım', 'E-ticaret'],
-      color: 'from-blue-500 to-blue-600'
-    },
-    {
-      icon: Users,
-      title: t.services.management.title,
-      description: t.services.management.description,
-      features: ['Sanatçı Yönetimi', 'Kariyer Planlama', 'Proje Koordinasyonu', 'Sektör Bağlantıları'],
-      color: 'from-emerald-500 to-emerald-600'
-    },
-    {
-      icon: Mic,
-      title: t.services.studio.title,
-      description: t.services.studio.description,
-      features: ['Ses Kayıt', 'Video Prodüksiyon', 'Post-Prodüksiyon', 'Mixing & Mastering'],
-      color: 'from-purple-500 to-purple-600'
-    },
-  ];
 
 
 
-  const technologies = [
-    { name: 'React', icon: Cpu },
-    { name: 'Next.js', icon: Globe },
-    { name: 'Node.js', icon: Database },
-    { name: 'TypeScript', icon: Code },
-    { name: 'Pro Tools', icon: Music },
-    { name: 'Adobe Premiere', icon: Video }
-  ];
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form submission logic
-    console.log('Form submitted:', formData);
-  };
+
+
+
+
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-black dark:via-gray-900 dark:to-slate-900 text-gray-900 dark:text-white">
