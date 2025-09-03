@@ -9,7 +9,7 @@ export const translations = {
       contact: "İletişim"
     },
     hero: {
-      title: "OneYapim",
+      title: "OneYapım",
       subtitle: "Yaratıcılık ve Teknolojinin Buluştuğu Nokta",
       description: "Organizasyon, yazılım, menajerlik ve stüdyo hizmetleriyle sanat ve teknoloji dünyasında fark yaratıyoruz. Tiyatro, konser ve stand-up etkinliklerinden yazılım çözümlerine kadar geniş bir yelpazede hizmet veriyoruz.",
       cta: "Keşfet"
@@ -17,7 +17,7 @@ export const translations = {
     about: {
       title: "Hakkımızda",
       subtitle: "Kimiz ve Ne Yapıyoruz",
-      description: "OneYapim olarak, sanat ve teknoloji dünyasında çok yönlü hizmetler sunan bir ekibiz. Organizasyon, yazılım, menajerlik ve stüdyo hizmetleriyle yaratıcı projelerinizi hayata geçiriyoruz.",
+      description: "OneYapım olarak, sanat ve teknoloji dünyasında çok yönlü hizmetler sunan bir ekibiz. Organizasyon, yazılım, menajerlik ve stüdyo hizmetleriyle yaratıcı projelerinizi hayata geçiriyoruz.",
       mission: "Misyonumuz",
       missionText: "Sanat ve teknolojiyi harmanlayarak, yaratıcı projelerinizi en iyi şekilde hayata geçirmek ve sektörde fark yaratmak.",
       vision: "Vizyonumuz",
@@ -60,7 +60,7 @@ export const translations = {
       }
     },
     footer: {
-      description: "OneYapim - İnovatif teknoloji çözümleri ile geleceği şekillendiriyoruz.",
+      description: "OneYapım - İnovatif teknoloji çözümleri ile geleceği şekillendiriyoruz.",
       quickLinks: "Hızlı Bağlantılar",
       services: "Hizmetler",
       contact: "İletişim",
@@ -82,7 +82,8 @@ export const translations = {
       organization: "Organizasyon",
       software: "Yazılım",
       management: "Yönetim",
-      studio: "Stüdyo"
+      studio: "Stüdyo",
+      ticketSales: "Online Bilet Satışı"
     }
   },
   en: {
@@ -93,7 +94,7 @@ export const translations = {
       contact: "Contact"
     },
     hero: {
-      title: "OneYapim",
+      title: "OneYapım",
       subtitle: "Where Creativity Meets Technology",
       description: "We make a difference in the world of art and technology with our organization, software, management and studio services. We provide a wide range of services from theater, concert and stand-up events to software solutions.",
       cta: "Explore"
@@ -101,7 +102,7 @@ export const translations = {
     about: {
       title: "About Us",
       subtitle: "Who We Are and What We Do",
-      description: "As OneYapim, we are a team that provides versatile services in the world of art and technology. We bring your creative projects to life with organization, software, management and studio services.",
+      description: "As OneYapım, we are a team that provides versatile services in the world of art and technology. We bring your creative projects to life with organization, software, management and studio services.",
       mission: "Our Mission",
       missionText: "To bring your creative projects to life in the best way by combining art and technology, and to make a difference in the industry.",
       vision: "Our Vision",
@@ -144,7 +145,7 @@ export const translations = {
       }
     },
     footer: {
-      description: "OneYapim - We are shaping the future with innovative technology solutions.",
+      description: "OneYapım - We are shaping the future with innovative technology solutions.",
       quickLinks: "Quick Links",
       services: "Services",
       contact: "Contact",
@@ -166,7 +167,8 @@ export const translations = {
       organization: "Organization",
       software: "Software",
       management: "Management",
-      studio: "Studio"
+      studio: "Studio",
+      ticketSales: "Online Ticket Sales"
     }
   },
   de: {
@@ -177,7 +179,7 @@ export const translations = {
       contact: "Kontakt"
     },
     hero: {
-      title: "OneYapim",
+      title: "OneYapım",
       subtitle: "Wo Kreativität auf Technologie trifft",
       description: "Wir machen einen Unterschied in der Welt der Kunst und Technologie mit unseren Organisations-, Software-, Management- und Studio-Services. Wir bieten eine breite Palette von Dienstleistungen von Theater-, Konzert- und Stand-up-Events bis hin zu Software-Lösungen.",
       cta: "Entdecken"
@@ -185,7 +187,7 @@ export const translations = {
     about: {
       title: "Über uns",
       subtitle: "Wer wir sind und was wir tun",
-      description: "Als OneYapim sind wir ein Team, das vielseitige Dienstleistungen in der Welt der Kunst und Technologie anbietet. Wir bringen Ihre kreativen Projekte mit Organisations-, Software-, Management- und Studio-Services zum Leben.",
+      description: "Als OneYapım sind wir ein Team, das vielseitige Dienstleistungen in der Welt der Kunst und Technologie anbietet. Wir bringen Ihre kreativen Projekte mit Organisations-, Software-, Management- und Studio-Services zum Leben.",
       mission: "Unsere Mission",
       missionText: "Ihre kreativen Projekte auf die beste Weise zum Leben zu erwecken, indem wir Kunst und Technologie kombinieren und einen Unterschied in der Branche zu machen.",
       vision: "Unsere Vision",
@@ -228,7 +230,7 @@ export const translations = {
       }
     },
     footer: {
-      description: "OneYapim - Wir gestalten die Zukunft mit innovativen Technologielösungen.",
+      description: "OneYapım - Wir gestalten die Zukunft mit innovativen Technologielösungen.",
       quickLinks: "Schnelle Links",
       services: "Dienstleistungen",
       contact: "Kontakt",
@@ -250,7 +252,8 @@ export const translations = {
       organization: "Organisation",
       software: "Software",
       management: "Management",
-      studio: "Studio"
+      studio: "Studio",
+      ticketSales: "Online Ticketverkauf"
     }
   }
 } as const;

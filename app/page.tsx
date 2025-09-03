@@ -4,7 +4,7 @@ import { useLanguage } from '@/contexts/language-context';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
   ArrowRight, Calendar, Code, Users, Mic, 
-  Target, Eye,
+  Target, Eye, Ticket,
   Mail, Phone, MapPin
 } from 'lucide-react';
 import OrganizationService from '@/components/services/organization-service';
@@ -222,12 +222,13 @@ export default function HomePage() {
             </p>
           </motion.div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {[
               { icon: Calendar, title: t.features.organization },
               { icon: Code, title: t.features.software },
               { icon: Users, title: t.features.management },
-              { icon: Mic, title: t.features.studio }
+              { icon: Mic, title: t.features.studio },
+              { icon: Ticket, title: t.features.ticketSales }
             ].map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -437,7 +438,7 @@ export default function HomePage() {
                   </div>
                   <div className="text-center">
                     <div className="text-gray-900 dark:text-white font-medium text-lg">{t.contact.phoneLabel}</div>
-                    <div className="text-gray-600 dark:text-gray-300">5357092761</div>
+                    <div className="text-gray-600 dark:text-gray-300">+90 535 709 27 61</div>
                   </div>
                 </div>
 
