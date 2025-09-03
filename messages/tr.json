@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "OneYapim",
+    "subtitle": "İnovatif Çözümler, Güvenilir Hizmet",
+    "description": "Teknoloji ve yaratıcılığın buluştuğu noktada, size özel çözümler sunuyoruz. Modern web teknolojileri ile işinizi bir üst seviyeye taşıyoruz.",
+    "cta": "Keşfet"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Kimiz ve Ne Yapıyoruz",
+    "description": "OneYapim olarak, teknoloji dünyasında yenilikçi çözümler üretmeye odaklanmış bir ekibiz. Müşterilerimizin ihtiyaçlarını anlayarak, onlara en uygun teknolojik çözümleri sunuyoruz.",
+    "mission": "Misyonumuz",
+    "missionText": "Teknoloji ile hayatları kolaylaştırmak ve işletmelerin dijital dönüşümüne öncülük etmek.",
+    "vision": "Vizyonumuz",
+    "visionText": "Türkiye'nin önde gelen teknoloji şirketlerinden biri olmak ve global pazarda rekabet edebilir çözümler üretmek."
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Size Sunduğumuz Çözümler",
+    "webDevelopment": {
+      "title": "Web Geliştirme",
+      "description": "Modern ve responsive web siteleri, e-ticaret platformları ve web uygulamaları geliştiriyoruz."
+    },
+    "mobileDevelopment": {
+      "title": "Mobil Uygulama",
+      "description": "iOS ve Android platformları için native ve cross-platform mobil uygulamalar geliştiriyoruz."
+    },
+    "consulting": {
+      "title": "Teknoloji Danışmanlığı",
+      "description": "Dijital dönüşüm süreçlerinizde size rehberlik ediyor, en uygun teknoloji çözümlerini öneriyoruz."
+    },
+    "maintenance": {
+      "title": "Bakım ve Destek",
+      "description": "Geliştirdiğimiz projelerin sürekli bakımını yapıyor ve 7/24 teknik destek sağlıyoruz."
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bizimle İletişime Geçin",
+    "description": "Projeleriniz hakkında konuşmak için bizimle iletişime geçin. Size en uygun çözümü birlikte bulalım.",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "send": "Gönder"
+    }
+  },
+  "footer": {
+    "description": "OneYapim - İnovatif teknoloji çözümleri ile geleceği şekillendiriyoruz.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "services": "Hizmetler",
+    "contact": "İletişim",
+    "followUs": "Bizi Takip Edin",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "common": {
+    "learnMore": "Daha Fazla Bilgi",
+    "getStarted": "Başlayın",
+    "readMore": "Devamını Oku",
+    "close": "Kapat",
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "success": "Başarılı"
+  }
+}

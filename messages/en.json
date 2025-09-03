@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "OneYapim",
+    "subtitle": "Innovative Solutions, Reliable Service",
+    "description": "At the intersection of technology and creativity, we provide customized solutions for you. We take your business to the next level with modern web technologies.",
+    "cta": "Explore"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Who We Are and What We Do",
+    "description": "As OneYapim, we are a team focused on producing innovative solutions in the technology world. We understand our customers' needs and offer them the most suitable technological solutions.",
+    "mission": "Our Mission",
+    "missionText": "To make life easier with technology and lead the digital transformation of businesses.",
+    "vision": "Our Vision",
+    "visionText": "To become one of Turkey's leading technology companies and produce competitive solutions in the global market."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Solutions We Offer You",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "We develop modern and responsive websites, e-commerce platforms and web applications."
+    },
+    "mobileDevelopment": {
+      "title": "Mobile Application",
+      "description": "We develop native and cross-platform mobile applications for iOS and Android platforms."
+    },
+    "consulting": {
+      "title": "Technology Consulting",
+      "description": "We guide you in your digital transformation processes and recommend the most suitable technology solutions."
+    },
+    "maintenance": {
+      "title": "Maintenance and Support",
+      "description": "We provide continuous maintenance of the projects we develop and provide 24/7 technical support."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in Touch with Us",
+    "description": "Contact us to discuss your projects. Let's find the most suitable solution for you together.",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send"
+    }
+  },
+  "footer": {
+    "description": "OneYapim - We are shaping the future with innovative technology solutions.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "readMore": "Read More",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success"
+  }
+}

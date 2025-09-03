@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "OneYapim",
+    "subtitle": "Innovative Lösungen, Zuverlässiger Service",
+    "description": "An der Schnittstelle von Technologie und Kreativität bieten wir Ihnen maßgeschneiderte Lösungen. Wir bringen Ihr Unternehmen mit modernen Web-Technologien auf die nächste Stufe.",
+    "cta": "Entdecken"
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Wer wir sind und was wir tun",
+    "description": "Als OneYapim sind wir ein Team, das sich darauf konzentriert, innovative Lösungen in der Technologiewelt zu entwickeln. Wir verstehen die Bedürfnisse unserer Kunden und bieten ihnen die am besten geeigneten technologischen Lösungen.",
+    "mission": "Unsere Mission",
+    "missionText": "Das Leben mit Technologie zu erleichtern und die digitale Transformation von Unternehmen anzuführen.",
+    "vision": "Unsere Vision",
+    "visionText": "Eines der führenden Technologieunternehmen der Türkei zu werden und wettbewerbsfähige Lösungen auf dem globalen Markt zu entwickeln."
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Lösungen, die wir Ihnen anbieten",
+    "webDevelopment": {
+      "title": "Webentwicklung",
+      "description": "Wir entwickeln moderne und responsive Websites, E-Commerce-Plattformen und Webanwendungen."
+    },
+    "mobileDevelopment": {
+      "title": "Mobile Anwendung",
+      "description": "Wir entwickeln native und plattformübergreifende mobile Anwendungen für iOS- und Android-Plattformen."
+    },
+    "consulting": {
+      "title": "Technologieberatung",
+      "description": "Wir begleiten Sie in Ihren digitalen Transformationsprozessen und empfehlen die am besten geeigneten Technologielösungen."
+    },
+    "maintenance": {
+      "title": "Wartung und Support",
+      "description": "Wir bieten kontinuierliche Wartung der von uns entwickelten Projekte und 24/7 technischen Support."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns",
+    "description": "Kontaktieren Sie uns, um über Ihre Projekte zu sprechen. Lassen Sie uns gemeinsam die beste Lösung für Sie finden.",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "send": "Senden"
+    }
+  },
+  "footer": {
+    "description": "OneYapim - Wir gestalten die Zukunft mit innovativen Technologielösungen.",
+    "quickLinks": "Schnelle Links",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "followUs": "Folgen Sie uns",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "getStarted": "Loslegen",
+    "readMore": "Weiterlesen",
+    "close": "Schließen",
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolgreich"
+  }
+}
