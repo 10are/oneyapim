@@ -4,7 +4,7 @@ import { useLanguage } from '@/contexts/language-context';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
   ArrowRight, Calendar, Code, Users, Mic, 
-  Target, Eye, Ticket,
+  Target, Eye, Ticket, UserCheck,
   Mail, Phone, MapPin
 } from 'lucide-react';
 import OrganizationService from '@/components/services/organization-service';
@@ -216,11 +216,12 @@ export default function HomePage() {
             </p>
           </motion.div>
           
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
             {[
               { icon: Calendar, title: t.features.organization },
               { icon: Code, title: t.features.software },
               { icon: Users, title: t.features.management },
+              { icon: UserCheck, title: t.features.management2 },
               { icon: Mic, title: t.features.studio },
               { icon: Ticket, title: t.features.ticketSales }
             ].map((feature, index) => (

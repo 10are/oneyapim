@@ -82,6 +82,7 @@ export const translations = {
       organization: "Organizasyon",
       software: "Yazılım",
       management: "Yönetim",
+      management2: "Menajerlik",
       studio: "Stüdyo",
       ticketSales: "Online Bilet Satışı"
     }
@@ -167,6 +168,7 @@ export const translations = {
       organization: "Organization",
       software: "Software",
       management: "Management",
+      management2: "Artist Management",
       studio: "Studio",
       ticketSales: "Online Ticket Sales"
     }
@@ -252,6 +254,7 @@ export const translations = {
       organization: "Organisation",
       software: "Software",
       management: "Management",
+      management2: "Künstler-Management",
       studio: "Studio",
       ticketSales: "Online Ticketverkauf"
     }
