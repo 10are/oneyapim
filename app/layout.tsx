@@ -19,6 +19,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "OneYapim - İnovatif Teknoloji Çözümleri",
   description: "OneYapim olarak, teknoloji dünyasında yenilikçi çözümler üretmeye odaklanmış bir ekibiz. Modern web teknolojileri ile işinizi bir üst seviyeye taşıyoruz.",
+  icons: {
+    icon: '/logooneyapim.jpg',
+    shortcut: '/logooneyapim.jpg',
+    apple: '/logooneyapim.jpg',
+  },
 };
 
 export default function RootLayout({
