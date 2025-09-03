@@ -11,7 +11,7 @@ import {
 import OrganizationService from '@/components/services/organization-service';
 import SoftwareService from '@/components/services/software-service';
 import { ManagementService } from '@/components/services/management-service';
-import { StudioService } from '@/components/services/studio-service';
+import StudioService from '@/components/services/studio-service';
 import { useState, useRef } from 'react';
 import React from 'react';
 
