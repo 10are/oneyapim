@@ -23,7 +23,7 @@ export default function StudioServicePanel() {
           <div className="w-2.5 h-2.5 md:w-3 md:h-3 bg-green-500 rounded-full"></div>
         </div>
         <span className="text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300">
-          {t.services.studio.title}
+        
         </span>
         <div />
       </div>

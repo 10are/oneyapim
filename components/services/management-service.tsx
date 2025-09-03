@@ -22,9 +22,7 @@ export function ManagementService() {
       <div className="p-8">
         {/* Header */}
         <div className="text-center mb-10">
-          <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            {t.services.management.title}
-          </h3>
+     
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
             {t.services.management.description}
           </p>

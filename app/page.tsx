@@ -61,12 +61,7 @@ export default function HomePage() {
     },
   ];
 
-  const stats = [
-    { number: '100+', label: 'Etkinlik', icon: Calendar },
-    { number: '50+', label: 'Yazılım Projesi', icon: Code },
-    { number: '30+', label: 'Sanatçı', icon: Users },
-    { number: '5+', label: 'Yıllık Deneyim', icon: Award }
-  ];
+
 
   const technologies = [
     { name: 'React', icon: Cpu },
@@ -259,13 +254,33 @@ export default function HomePage() {
         />
       </section>
 
-      {/* Stats Section */}
-      <section id="stats" className="relative py-24">
+      {/* Features Section */}
+      <section id="features" className="relative py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+              Ana Özelliklerimiz
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Kapsamlı hizmet yelpazemizle ihtiyaçlarınıza çözüm sunuyoruz
+            </p>
+          </motion.div>
+          
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
+            {[
+              { icon: Calendar, title: "Organizasyon" },
+              { icon: Code, title: "Yazılım" },
+              { icon: Users, title: "Yönetim" },
+              { icon: Mic, title: "Stüdyo" }
+            ].map((feature, index) => (
               <motion.div
-                key={stat.label}
+                key={feature.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
@@ -277,13 +292,10 @@ export default function HomePage() {
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <stat.icon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                  <feature.icon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                 </motion.div>
-                <div className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600 dark:text-gray-400 text-sm">
-                  {stat.label}
+                <div className="text-lg font-semibold text-gray-900 dark:text-white">
+                  {feature.title}
                 </div>
               </motion.div>
             ))}
@@ -301,20 +313,8 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              <motion.span 
-                className="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-white dark:to-blue-200 bg-clip-text text-transparent"
-                animate={{ 
-                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
-                }}
-                transition={{ 
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "linear"
-                }}
-              >
-                {t.services.title}
-              </motion.span>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
+              {t.services.title}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               {t.services.subtitle}
@@ -325,10 +325,33 @@ export default function HomePage() {
 
           {/* Services Stack */}
           <div className="space-y-16">
-            <OrganizationService />
-            <SoftwareService />
-            <ManagementService />
-            <StudioService />
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                {t.services.organization.title}
+              </h3>
+              <OrganizationService />
+            </div>
+            
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                {t.services.software.title}
+              </h3>
+              <SoftwareService />
+            </div>
+            
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                {t.services.management.title}
+              </h3>
+              <ManagementService />
+            </div>
+            
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                {t.services.studio.title}
+              </h3>
+              <StudioService />
+            </div>
           </div>
         </div>
       </section>
@@ -455,7 +478,7 @@ export default function HomePage() {
                   </div>
                   <div className="text-center">
                     <div className="text-gray-900 dark:text-white font-medium text-lg">E-posta</div>
-                    <div className="text-gray-600 dark:text-gray-300">info@oneyapim.com</div>
+                    <div className="text-gray-600 dark:text-gray-300">info@oneyapim.co</div>
                   </div>
                 </div>
 
@@ -465,7 +488,7 @@ export default function HomePage() {
                   </div>
                   <div className="text-center">
                     <div className="text-gray-900 dark:text-white font-medium text-lg">Telefon</div>
-                    <div className="text-gray-600 dark:text-gray-300">+90 (212) 123 45 67</div>
+                    <div className="text-gray-600 dark:text-gray-300">5357092761</div>
                   </div>
                 </div>
 
