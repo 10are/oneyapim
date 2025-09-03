@@ -47,9 +47,10 @@ export const translations = {
       title: "İletişim",
       subtitle: "Bizimle İletişime Geçin",
       description: "Projeleriniz hakkında konuşmak için bizimle iletişime geçin. Size en uygun çözümü birlikte bulalım.",
-      email: "E-posta",
-      phone: "Telefon",
-      address: "Adres",
+      emailLabel: "E-posta",
+      phoneLabel: "Telefon",
+      addressLabel: "Adres",
+      addressValue: "İstanbul, Türkiye",
       form: {
         name: "Ad Soyad",
         email: "E-posta",
@@ -74,6 +75,14 @@ export const translations = {
       loading: "Yükleniyor...",
       error: "Bir hata oluştu",
       success: "Başarılı"
+    },
+    features: {
+      title: "Ana Özelliklerimiz",
+      subtitle: "Kapsamlı hizmet yelpazemizle ihtiyaçlarınıza çözüm sunuyoruz",
+      organization: "Organizasyon",
+      software: "Yazılım",
+      management: "Yönetim",
+      studio: "Stüdyo"
     }
   },
   en: {
@@ -122,9 +131,10 @@ export const translations = {
       title: "Contact",
       subtitle: "Get in Touch with Us",
       description: "Contact us to discuss your projects. Let's find the most suitable solution for you together.",
-      email: "Email",
-      phone: "Phone",
-      address: "Address",
+      emailLabel: "Email",
+      phoneLabel: "Phone",
+      addressLabel: "Address",
+      addressValue: "Istanbul, Turkey",
       form: {
         name: "Full Name",
         email: "Email",
@@ -149,6 +159,14 @@ export const translations = {
       loading: "Loading...",
       error: "An error occurred",
       success: "Success"
+    },
+    features: {
+      title: "Our Main Features",
+      subtitle: "We provide solutions to your needs with our comprehensive service range",
+      organization: "Organization",
+      software: "Software",
+      management: "Management",
+      studio: "Studio"
     }
   },
   de: {
@@ -197,9 +215,10 @@ export const translations = {
       title: "Kontakt",
       subtitle: "Kontaktieren Sie uns",
       description: "Kontaktieren Sie uns, um über Ihre Projekte zu sprechen. Lassen Sie uns gemeinsam die beste Lösung für Sie finden.",
-      email: "E-Mail",
-      phone: "Telefon",
-      address: "Adresse",
+      emailLabel: "E-Mail",
+      phoneLabel: "Telefon",
+      addressLabel: "Adresse",
+      addressValue: "Istanbul, Türkei",
       form: {
         name: "Vollständiger Name",
         email: "E-Mail",
@@ -224,6 +243,14 @@ export const translations = {
       loading: "Wird geladen...",
       error: "Ein Fehler ist aufgetreten",
       success: "Erfolgreich"
+    },
+    features: {
+      title: "Unsere Hauptmerkmale",
+      subtitle: "Wir bieten Lösungen für Ihre Bedürfnisse mit unserem umfassenden Serviceangebot",
+      organization: "Organisation",
+      software: "Software",
+      management: "Management",
+      studio: "Studio"
     }
   }
 } as const;

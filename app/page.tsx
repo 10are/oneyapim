@@ -5,25 +5,16 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
   ArrowRight, Calendar, Code, Users, Mic, 
   Target, Eye,
-  Mail, Phone, MapPin,
-  Globe, Cpu, Database, Music, Video
+  Mail, Phone, MapPin
 } from 'lucide-react';
 import OrganizationService from '@/components/services/organization-service';
 import SoftwareService from '@/components/services/software-service';
 import { ManagementService } from '@/components/services/management-service';
 import StudioService from '@/components/services/studio-service';
-import { useState } from 'react';
 import React from 'react';
 
 export default function HomePage() {
   const { t } = useLanguage();
-
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
 
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
@@ -224,19 +215,19 @@ export default function HomePage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-              Ana Özelliklerimiz
+              {t.features.title}
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Kapsamlı hizmet yelpazemizle ihtiyaçlarınıza çözüm sunuyoruz
+              {t.features.subtitle}
             </p>
           </motion.div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { icon: Calendar, title: "Organizasyon" },
-              { icon: Code, title: "Yazılım" },
-              { icon: Users, title: "Yönetim" },
-              { icon: Mic, title: "Stüdyo" }
+              { icon: Calendar, title: t.features.organization },
+              { icon: Code, title: t.features.software },
+              { icon: Users, title: t.features.management },
+              { icon: Mic, title: t.features.studio }
             ].map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -435,7 +426,7 @@ export default function HomePage() {
                     <Mail className="h-8 w-8 text-blue-400" />
                   </div>
                   <div className="text-center">
-                    <div className="text-gray-900 dark:text-white font-medium text-lg">E-posta</div>
+                    <div className="text-gray-900 dark:text-white font-medium text-lg">{t.contact.emailLabel}</div>
                     <div className="text-gray-600 dark:text-gray-300">info@oneyapim.co</div>
                   </div>
                 </div>
@@ -445,7 +436,7 @@ export default function HomePage() {
                     <Phone className="h-8 w-8 text-green-400" />
                   </div>
                   <div className="text-center">
-                    <div className="text-gray-900 dark:text-white font-medium text-lg">Telefon</div>
+                    <div className="text-gray-900 dark:text-white font-medium text-lg">{t.contact.phoneLabel}</div>
                     <div className="text-gray-600 dark:text-gray-300">5357092761</div>
                   </div>
                 </div>
@@ -455,8 +446,8 @@ export default function HomePage() {
                     <MapPin className="h-8 w-8 text-orange-400" />
                   </div>
                   <div className="text-center">
-                    <div className="text-gray-900 dark:text-white font-medium text-lg">Adres</div>
-                    <div className="text-gray-600 dark:text-gray-300">İstanbul, Türkiye</div>
+                    <div className="text-gray-900 dark:text-white font-medium text-lg">{t.contact.addressLabel}</div>
+                    <div className="text-gray-600 dark:text-gray-300">{t.contact.addressValue}</div>
                   </div>
                 </div>
               </div>
