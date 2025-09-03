@@ -34,8 +34,8 @@ export default function StudioServicePanel() {
           Prodüksiyon Paneli
         </h3>
         <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm leading-relaxed">
-          {t.services.studio.description} – Bu panel üzerinden kayıt yapabilir, kesme/düzenleme
-          işlemleri gerçekleştirebilir, miksaj ve mastering kontrollerini yönetebilirsiniz.
+          {t.services.studio.description} – Stüdyomuzda profesyonel ses kayıt, video prodüksiyon, 
+          post-prodüksiyon ve mastering hizmetleri sunuyoruz. Modern ekipmanlarımızla yüksek kaliteli çıktılar üretiyoruz.
         </p>
       </div>
 
