@@ -19,12 +19,12 @@ export function Footer() {
             <div className="flex items-center space-x-2">
               <Image
                 src="/logooneyapim.jpg"
-                alt="OneYapim Logo"
+                alt="One Yapım Logo"
                 width={32}
                 height={32}
                 className="rounded-lg"
               />
-              <span className="text-lg font-bold text-gray-900 dark:text-white">OneYapim</span>
+              <span className="text-lg font-bold text-gray-900 dark:text-white">One Yapım</span>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-300">
               {t.footer.description}
@@ -121,7 +121,7 @@ export function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-600 dark:text-gray-300">
-              © {currentYear} OneYapim. {t.footer.rights}
+              © {currentYear} One Yapım. {t.footer.rights}
             </p>
             <div className="flex space-x-6">
               <a
