@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/language-context';
-import { Github, Linkedin, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export function Footer() {
   const { t } = useLanguage();
@@ -29,29 +29,7 @@ export function Footer() {
             <p className="text-sm text-gray-600 dark:text-gray-300">
               {t.footer.description}
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
-                aria-label="GitHub"
-              >
-                <Github className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-            </div>
+
           </div>
 
           {/* Quick Links */}
@@ -126,11 +104,11 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300">
                 <Mail className="h-4 w-4" />
-                <span>info@oneyapim.com</span>
+                <span>info@oneyapim.co</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300">
                 <Phone className="h-4 w-4" />
-                <span>+90 (212) 123 45 67</span>
+                <span>5357092761</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300">
                 <MapPin className="h-4 w-4" />

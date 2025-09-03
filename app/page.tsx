@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
   ArrowRight, Calendar, Code, Users, Mic, 
   Target, Eye, Award, CheckCircle, Star,
-  Mail, Phone, MapPin, Send, Github, Linkedin, Twitter,
+  Mail, Phone, MapPin, Send,
   Globe, Rocket, Shield, Cpu, Database, Cloud, Music, Video, Headphones
 } from 'lucide-react';
 import OrganizationService from '@/components/services/organization-service';
@@ -465,7 +465,6 @@ export default function HomePage() {
               className="space-y-8"
             >
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">İletişim Bilgileri</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
                   {t.contact.description}
                 </p>
@@ -503,32 +502,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="pt-8 text-center">
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Sosyal Medya</h4>
-                <div className="flex justify-center space-x-6">
-                  <motion.a
-                    whileHover={{ scale: 1.1 }}
-                    href="#"
-                    className="p-4 bg-gray-50/50 dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 hover:border-gray-300 dark:hover:border-white/20 transition-all"
-                  >
-                    <Github className="h-8 w-8 text-gray-700 dark:text-white" />
-                  </motion.a>
-                  <motion.a
-                    whileHover={{ scale: 1.1 }}
-                    href="#"
-                    className="p-4 bg-gray-50/50 dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 hover:border-gray-300 dark:hover:border-white/20 transition-all"
-                  >
-                    <Linkedin className="h-8 w-8 text-gray-700 dark:text-white" />
-                  </motion.a>
-                  <motion.a
-                    whileHover={{ scale: 1.1 }}
-                    href="#"
-                    className="p-4 bg-gray-50/50 dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 hover:border-gray-300 dark:hover:border-white/20 transition-all"
-                  >
-                    <Twitter className="h-8 w-8 text-gray-700 dark:text-white" />
-                  </motion.a>
-                </div>
-              </div>
+
             </motion.div>
           </div>
         </div>
