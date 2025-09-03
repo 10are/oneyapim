@@ -56,13 +56,7 @@ export default function HomePage() {
                 transition={{ duration: 0.8 }}
                 className="mb-8"
               >
-                <div className="mb-6">
-                  <img
-                    src="/logooneyapim.jpg"
-                    alt="OneYapim Logo"
-                    className="w-24 h-24 rounded-lg shadow-2xl"
-                  />
-                </div>
+   
               </motion.div>
               
               <motion.h1
