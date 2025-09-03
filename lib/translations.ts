@@ -10,37 +10,37 @@ export const translations = {
     },
     hero: {
       title: "OneYapim",
-      subtitle: "İnovatif Çözümler, Güvenilir Hizmet",
-      description: "Teknoloji ve yaratıcılığın buluştuğu noktada, size özel çözümler sunuyoruz. Modern web teknolojileri ile işinizi bir üst seviyeye taşıyoruz.",
+      subtitle: "Yaratıcılık ve Teknolojinin Buluştuğu Nokta",
+      description: "Organizasyon, yazılım, menajerlik ve stüdyo hizmetleriyle sanat ve teknoloji dünyasında fark yaratıyoruz. Tiyatro, konser ve stand-up etkinliklerinden yazılım çözümlerine kadar geniş bir yelpazede hizmet veriyoruz.",
       cta: "Keşfet"
     },
     about: {
       title: "Hakkımızda",
       subtitle: "Kimiz ve Ne Yapıyoruz",
-      description: "OneYapim olarak, teknoloji dünyasında yenilikçi çözümler üretmeye odaklanmış bir ekibiz. Müşterilerimizin ihtiyaçlarını anlayarak, onlara en uygun teknolojik çözümleri sunuyoruz.",
+      description: "OneYapim olarak, sanat ve teknoloji dünyasında çok yönlü hizmetler sunan bir ekibiz. Organizasyon, yazılım, menajerlik ve stüdyo hizmetleriyle yaratıcı projelerinizi hayata geçiriyoruz.",
       mission: "Misyonumuz",
-      missionText: "Teknoloji ile hayatları kolaylaştırmak ve işletmelerin dijital dönüşümüne öncülük etmek.",
+      missionText: "Sanat ve teknolojiyi harmanlayarak, yaratıcı projelerinizi en iyi şekilde hayata geçirmek ve sektörde fark yaratmak.",
       vision: "Vizyonumuz",
-      visionText: "Türkiye'nin önde gelen teknoloji şirketlerinden biri olmak ve global pazarda rekabet edebilir çözümler üretmek."
+      visionText: "Türkiye'nin önde gelen organizasyon ve yazılım şirketlerinden biri olmak, sanat ve teknoloji alanında öncü çözümler üretmek."
     },
     services: {
       title: "Hizmetlerimiz",
       subtitle: "Size Sunduğumuz Çözümler",
-      webDevelopment: {
-        title: "Web Geliştirme",
-        description: "Modern ve responsive web siteleri, e-ticaret platformları ve web uygulamaları geliştiriyoruz."
+      organization: {
+        title: "Organizasyon",
+        description: "Tiyatro, konser ve stand-up etkinlikleri başta olmak üzere tüm sanat organizasyonlarınızı profesyonelce planlıyor ve yönetiyoruz."
       },
-      mobileDevelopment: {
-        title: "Mobil Uygulama",
-        description: "iOS ve Android platformları için native ve cross-platform mobil uygulamalar geliştiriyoruz."
+      software: {
+        title: "Yazılım",
+        description: "Modern web siteleri, mobil uygulamalar ve özel yazılım çözümleri geliştiriyoruz. Teknoloji ile yaratıcılığınızı birleştiriyoruz."
       },
-      consulting: {
-        title: "Teknoloji Danışmanlığı",
-        description: "Dijital dönüşüm süreçlerinizde size rehberlik ediyor, en uygun teknoloji çözümlerini öneriyoruz."
+      management: {
+        title: "Menajerlik",
+        description: "Sanatçılarınızın kariyerlerini yönetiyor, projelerini koordine ediyor ve sektördeki bağlantılarını güçlendiriyoruz."
       },
-      maintenance: {
-        title: "Bakım ve Destek",
-        description: "Geliştirdiğimiz projelerin sürekli bakımını yapıyor ve 7/24 teknik destek sağlıyoruz."
+      studio: {
+        title: "Stüdyo",
+        description: "Profesyonel kayıt, prodüksiyon ve post-prodüksiyon hizmetleriyle ses ve görüntü projelerinizi hayata geçiriyoruz."
       }
     },
     contact: {
@@ -85,37 +85,37 @@ export const translations = {
     },
     hero: {
       title: "OneYapim",
-      subtitle: "Innovative Solutions, Reliable Service",
-      description: "At the intersection of technology and creativity, we provide customized solutions for you. We take your business to the next level with modern web technologies.",
+      subtitle: "Where Creativity Meets Technology",
+      description: "We make a difference in the world of art and technology with our organization, software, management and studio services. We provide a wide range of services from theater, concert and stand-up events to software solutions.",
       cta: "Explore"
     },
     about: {
       title: "About Us",
       subtitle: "Who We Are and What We Do",
-      description: "As OneYapim, we are a team focused on producing innovative solutions in the technology world. We understand our customers' needs and offer them the most suitable technological solutions.",
+      description: "As OneYapim, we are a team that provides versatile services in the world of art and technology. We bring your creative projects to life with organization, software, management and studio services.",
       mission: "Our Mission",
-      missionText: "To make life easier with technology and lead the digital transformation of businesses.",
+      missionText: "To bring your creative projects to life in the best way by combining art and technology, and to make a difference in the industry.",
       vision: "Our Vision",
-      visionText: "To become one of Turkey's leading technology companies and produce competitive solutions in the global market."
+      visionText: "To become one of Turkey's leading organization and software companies, producing pioneering solutions in the field of art and technology."
     },
     services: {
       title: "Our Services",
       subtitle: "Solutions We Offer You",
-      webDevelopment: {
-        title: "Web Development",
-        description: "We develop modern and responsive websites, e-commerce platforms and web applications."
+      organization: {
+        title: "Organization",
+        description: "We professionally plan and manage all your art organizations, especially theater, concert and stand-up events."
       },
-      mobileDevelopment: {
-        title: "Mobile Application",
-        description: "We develop native and cross-platform mobile applications for iOS and Android platforms."
+      software: {
+        title: "Software",
+        description: "We develop modern websites, mobile applications and custom software solutions. We combine technology with your creativity."
       },
-      consulting: {
-        title: "Technology Consulting",
-        description: "We guide you in your digital transformation processes and recommend the most suitable technology solutions."
+      management: {
+        title: "Management",
+        description: "We manage your artists' careers, coordinate their projects and strengthen their connections in the industry."
       },
-      maintenance: {
-        title: "Maintenance and Support",
-        description: "We provide continuous maintenance of the projects we develop and provide 24/7 technical support."
+      studio: {
+        title: "Studio",
+        description: "We bring your audio and video projects to life with professional recording, production and post-production services."
       }
     },
     contact: {
@@ -160,37 +160,37 @@ export const translations = {
     },
     hero: {
       title: "OneYapim",
-      subtitle: "Innovative Lösungen, Zuverlässiger Service",
-      description: "An der Schnittstelle von Technologie und Kreativität bieten wir Ihnen maßgeschneiderte Lösungen. Wir bringen Ihr Unternehmen mit modernen Web-Technologien auf die nächste Stufe.",
+      subtitle: "Wo Kreativität auf Technologie trifft",
+      description: "Wir machen einen Unterschied in der Welt der Kunst und Technologie mit unseren Organisations-, Software-, Management- und Studio-Services. Wir bieten eine breite Palette von Dienstleistungen von Theater-, Konzert- und Stand-up-Events bis hin zu Software-Lösungen.",
       cta: "Entdecken"
     },
     about: {
       title: "Über uns",
       subtitle: "Wer wir sind und was wir tun",
-      description: "Als OneYapim sind wir ein Team, das sich darauf konzentriert, innovative Lösungen in der Technologiewelt zu entwickeln. Wir verstehen die Bedürfnisse unserer Kunden und bieten ihnen die am besten geeigneten technologischen Lösungen.",
+      description: "Als OneYapim sind wir ein Team, das vielseitige Dienstleistungen in der Welt der Kunst und Technologie anbietet. Wir bringen Ihre kreativen Projekte mit Organisations-, Software-, Management- und Studio-Services zum Leben.",
       mission: "Unsere Mission",
-      missionText: "Das Leben mit Technologie zu erleichtern und die digitale Transformation von Unternehmen anzuführen.",
+      missionText: "Ihre kreativen Projekte auf die beste Weise zum Leben zu erwecken, indem wir Kunst und Technologie kombinieren und einen Unterschied in der Branche zu machen.",
       vision: "Unsere Vision",
-      visionText: "Eines der führenden Technologieunternehmen der Türkei zu werden und wettbewerbsfähige Lösungen auf dem globalen Markt zu entwickeln."
+      visionText: "Eines der führenden Organisations- und Softwareunternehmen der Türkei zu werden und wegweisende Lösungen im Bereich Kunst und Technologie zu entwickeln."
     },
     services: {
       title: "Unsere Dienstleistungen",
       subtitle: "Lösungen, die wir Ihnen anbieten",
-      webDevelopment: {
-        title: "Webentwicklung",
-        description: "Wir entwickeln moderne und responsive Websites, E-Commerce-Plattformen und Webanwendungen."
+      organization: {
+        title: "Organisation",
+        description: "Wir planen und verwalten alle Ihre Kunstorganisationen professionell, insbesondere Theater-, Konzert- und Stand-up-Events."
       },
-      mobileDevelopment: {
-        title: "Mobile Anwendung",
-        description: "Wir entwickeln native und plattformübergreifende mobile Anwendungen für iOS- und Android-Plattformen."
+      software: {
+        title: "Software",
+        description: "Wir entwickeln moderne Websites, mobile Anwendungen und maßgeschneiderte Software-Lösungen. Wir kombinieren Technologie mit Ihrer Kreativität."
       },
-      consulting: {
-        title: "Technologieberatung",
-        description: "Wir begleiten Sie in Ihren digitalen Transformationsprozessen und empfehlen die am besten geeigneten Technologielösungen."
+      management: {
+        title: "Management",
+        description: "Wir verwalten die Karrieren Ihrer Künstler, koordinieren ihre Projekte und stärken ihre Verbindungen in der Branche."
       },
-      maintenance: {
-        title: "Wartung und Support",
-        description: "Wir bieten kontinuierliche Wartung der von uns entwickelten Projekte und 24/7 technischen Support."
+      studio: {
+        title: "Studio",
+        description: "Wir bringen Ihre Audio- und Video-Projekte mit professionellen Aufnahme-, Produktions- und Post-Produktions-Services zum Leben."
       }
     },
     contact: {

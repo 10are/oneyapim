@@ -3,17 +3,21 @@
 import { useLanguage } from '@/contexts/language-context';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
-  ArrowRight, Code, Smartphone, Users, Zap, 
+  ArrowRight, Calendar, Code, Users, Mic, 
   Target, Eye, Award, CheckCircle, Star,
   Mail, Phone, MapPin, Send, Github, Linkedin, Twitter,
-  Globe, Rocket, Shield, Cpu, Database, Cloud
+  Globe, Rocket, Shield, Cpu, Database, Cloud, Music, Video, Headphones
 } from 'lucide-react';
+import OrganizationService from '@/components/services/organization-service';
+import SoftwareService from '@/components/services/software-service';
+import { ManagementService } from '@/components/services/management-service';
+import { StudioService } from '@/components/services/studio-service';
 import { useState, useRef } from 'react';
 import React from 'react';
 
 export default function HomePage() {
   const { t } = useLanguage();
-  const [activeService, setActiveService] = useState(0);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -28,40 +32,40 @@ export default function HomePage() {
 
   const services = [
     {
+      icon: Calendar,
+      title: t.services.organization.title,
+      description: t.services.organization.description,
+      features: ['Tiyatro Etkinlikleri', 'Konser Organizasyonu', 'Stand-up Gösterileri', 'Sahne Yönetimi'],
+      color: 'from-red-500 to-red-600'
+    },
+    {
       icon: Code,
-      title: t.services.webDevelopment.title,
-      description: t.services.webDevelopment.description,
-      features: ['Responsive Tasarım', 'E-ticaret', 'Web Uygulamaları', 'API Geliştirme'],
+      title: t.services.software.title,
+      description: t.services.software.description,
+      features: ['Web Siteleri', 'Mobil Uygulamalar', 'Özel Yazılım', 'E-ticaret'],
       color: 'from-blue-500 to-blue-600'
     },
     {
-      icon: Smartphone,
-      title: t.services.mobileDevelopment.title,
-      description: t.services.mobileDevelopment.description,
-      features: ['iOS Uygulamaları', 'Android Uygulamaları', 'Cross-Platform', 'UI/UX Tasarım'],
+      icon: Users,
+      title: t.services.management.title,
+      description: t.services.management.description,
+      features: ['Sanatçı Yönetimi', 'Kariyer Planlama', 'Proje Koordinasyonu', 'Sektör Bağlantıları'],
       color: 'from-emerald-500 to-emerald-600'
     },
     {
-      icon: Users,
-      title: t.services.consulting.title,
-      description: t.services.consulting.description,
-      features: ['Dijital Dönüşüm', 'Teknoloji Stratejisi', 'Sistem Analizi', 'Proje Yönetimi'],
-      color: 'from-orange-500 to-orange-600'
-    },
-    {
-      icon: Zap,
-      title: t.services.maintenance.title,
-      description: t.services.maintenance.description,
-      features: ['7/24 Destek', 'Güvenlik Güncellemeleri', 'Performans Optimizasyonu', 'Monitoring'],
+      icon: Mic,
+      title: t.services.studio.title,
+      description: t.services.studio.description,
+      features: ['Ses Kayıt', 'Video Prodüksiyon', 'Post-Prodüksiyon', 'Mixing & Mastering'],
       color: 'from-purple-500 to-purple-600'
     },
   ];
 
   const stats = [
-    { number: '50+', label: 'Tamamlanan Proje', icon: Rocket },
-    { number: '25+', label: 'Mutlu Müşteri', icon: Users },
-    { number: '3+', label: 'Yıllık Deneyim', icon: Award },
-    { number: '24/7', label: 'Destek', icon: Shield }
+    { number: '100+', label: 'Etkinlik', icon: Calendar },
+    { number: '50+', label: 'Yazılım Projesi', icon: Code },
+    { number: '30+', label: 'Sanatçı', icon: Users },
+    { number: '5+', label: 'Yıllık Deneyim', icon: Award }
   ];
 
   const technologies = [
@@ -69,8 +73,8 @@ export default function HomePage() {
     { name: 'Next.js', icon: Globe },
     { name: 'Node.js', icon: Database },
     { name: 'TypeScript', icon: Code },
-    { name: 'AWS', icon: Cloud },
-    { name: 'Docker', icon: Zap }
+    { name: 'Pro Tools', icon: Music },
+    { name: 'Adobe Premiere', icon: Video }
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -198,8 +202,8 @@ export default function HomePage() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Modern Office"
+                  src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Creative Studio"
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
@@ -256,7 +260,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section id="stats" className="relative py-20">
+      <section id="stats" className="relative py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -288,7 +292,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="relative py-32">
+      <section id="services" className="relative py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -317,139 +321,20 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          {/* Mobile: Simple Grid */}
-          <div className="lg:hidden grid grid-cols-1 md:grid-cols-2 gap-6">
-            {services.map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group relative p-6 rounded-2xl bg-gray-50/50 dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-gray-300 dark:hover:border-white/20 transition-all duration-300"
-              >
-                <div className="text-center">
-                  <motion.div 
-                    className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${service.color} bg-opacity-20 rounded-2xl mb-4`}
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <service.icon className="h-8 w-8 text-white" />
-                  </motion.div>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="flex flex-wrap gap-1 justify-center">
-                    {service.features.slice(0, 2).map((feature, featureIndex) => (
-                      <span
-                        key={featureIndex}
-                        className="px-2 py-1 bg-gray-200 dark:bg-white/10 rounded-full text-xs text-gray-700 dark:text-white/80"
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                    {service.features.length > 2 && (
-                      <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 rounded-full text-xs text-blue-600 dark:text-blue-400">
-                        +{service.features.length - 2} daha
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
 
-          {/* Desktop: Interactive Layout */}
-          <div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Service Cards */}
-            <div className="space-y-6">
-              {services.map((service, index) => (
-                <motion.div
-                  key={service.title}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className={`group relative p-8 rounded-3xl bg-gray-50/50 dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-gray-300 dark:hover:border-white/20 transition-all duration-300 cursor-pointer ${
-                    activeService === index ? 'ring-2 ring-blue-400' : ''
-                  }`}
-                  onClick={() => setActiveService(index)}
-                >
-                  <div className="flex items-start space-x-4">
-                    <motion.div 
-                      className={`p-3 rounded-2xl bg-gradient-to-r ${service.color} bg-opacity-20`}
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      transition={{ type: "spring", stiffness: 300 }}
-                    >
-                      <service.icon className="h-8 w-8 text-white" />
-                    </motion.div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                        {service.title}
-                      </h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-4">
-                        {service.description}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {service.features.map((feature, featureIndex) => (
-                          <span
-                            key={featureIndex}
-                            className="px-3 py-1 bg-gray-200 dark:bg-white/10 rounded-full text-sm text-gray-700 dark:text-white/80"
-                          >
-                            {feature}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
 
-            {/* Service Details */}
-            <motion.div
-              key={activeService}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="relative"
-            >
-              <div className="sticky top-20 p-8 rounded-3xl bg-gray-50/50 dark:bg-white/5 border border-gray-200 dark:border-white/10 backdrop-blur-sm">
-                <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${services[activeService].color} bg-opacity-20 rounded-2xl mb-6`}>
-                  {React.createElement(services[activeService].icon, { className: "h-8 w-8 text-white" })}
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  {services[activeService].title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                  {services[activeService].description}
-                </p>
-                <div className="space-y-3">
-                  {services[activeService].features.map((feature, index) => (
-                    <div key={index} className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0" />
-                      <span className="text-gray-700 dark:text-white/90">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="mt-8 w-full py-3 px-6 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-600 dark:to-cyan-600 text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 border border-white/10"
-                >
-                  Detaylı Bilgi Al
-                </motion.button>
-              </div>
-            </motion.div>
+          {/* Services Stack */}
+          <div className="space-y-16">
+            <OrganizationService />
+            <SoftwareService />
+            <ManagementService />
+            <StudioService />
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative py-32">
+      <section id="about" className="relative py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -517,8 +402,8 @@ export default function HomePage() {
             >
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Team Working"
+                  src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Creative Team"
                   className="rounded-2xl shadow-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
@@ -529,7 +414,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative py-32">
+      <section id="contact" className="relative py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

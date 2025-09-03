@@ -99,22 +99,22 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <span className="text-sm text-gray-600 dark:text-gray-300">
-                  {t.services.webDevelopment.title}
+                  {t.services.organization.title}
                 </span>
               </li>
               <li>
                 <span className="text-sm text-gray-600 dark:text-gray-300">
-                  {t.services.mobileDevelopment.title}
+                  {t.services.software.title}
                 </span>
               </li>
               <li>
                 <span className="text-sm text-gray-600 dark:text-gray-300">
-                  {t.services.consulting.title}
+                  {t.services.management.title}
                 </span>
               </li>
               <li>
                 <span className="text-sm text-gray-600 dark:text-gray-300">
-                  {t.services.maintenance.title}
+                  {t.services.studio.title}
                 </span>
               </li>
             </ul>
